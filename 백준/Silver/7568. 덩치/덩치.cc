@@ -18,7 +18,6 @@ void compare(vector<vector<int>> &a, int N) {
             }
         }
         grade[i] = temp;
-        //cout << temp << " " << w << h <<endl;
     }
     
     int k = 0;
@@ -55,7 +54,7 @@ int main()
         grade.push_back(temp);
     }
     
-    for(int i = 0; i < grade.size(); i++) {
+    for(int i = 0; i < N; i++) {
         cout << grade[i] << " ";
     }
 
