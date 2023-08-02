@@ -11,12 +11,12 @@ vector<string> solution(vector<string> record) {
     queue<pair<string, string>> q;
     
     for(string r : record) {
-        istringstream ss(r);
-        string substr;
+        stringstream ss(r);
+        string sub;
         vector<string> tokens;
 
-        while(getline(ss, substr, ' ')) {
-            tokens.push_back(substr);
+        while(ss >> sub) {
+            tokens.push_back(sub);
         }
         if(tokens[0] == "Enter") { // 입장
             if(user.find(tokens[1]) != user.end()) { // 재입장 유저일 때
