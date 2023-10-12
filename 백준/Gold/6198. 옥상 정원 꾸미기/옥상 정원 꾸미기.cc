@@ -10,7 +10,7 @@ int main() {
 	stack<int> s;
 	cin >> n;
 
-	for(int i = 0; i < n; i++) {
+	while(n--) {
 		cin >> h;
 		while (!s.empty() && s.top() <= h) {
 			s.pop();
